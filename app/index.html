@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Веб-разработка</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="main">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav nav">
+            <div class="nav-item"><a class="header__nav-item-link nav-item-link header__nav-item-link--first" href="#">
+                Главная</a></div>
+            <div class="nav-item"><a class="header__nav-item-link nav-item-link" href="#projects">Проекты</a>
+            </div>
+            <div class="nav-item nav-item--burger">
+              <div class="header__nav-item-link nav-item-link header__nav-item-link--burger ">
+                разработка сайтов
+              </div>
+              <div class="burger-menu-sites">
+                <a class="burger-menu-sites-item" href="#development">
+                  Интернет-магазин
+                </a>
+                <a class="burger-menu-sites-item" href="#development">Интернет-каталог</a>
+                <a class="burger-menu-sites-item" href="#development">Корпоративный сайт</a>
+                <a class="burger-menu-sites-item" href="#development">Landing page</a>
+                <a class="burger-menu-sites-item" href="#development">Сайт-визитка</a>
+                <a class="burger-menu-sites-item" href="#development">Веб-сервис</a>
+              </div>
+            </div>
+            <div class="nav-item"><a class="header__nav-item-link nav-item-link" href="#stages">
+                услуги</a>
+            </div>
+            <div class="nav-item"><a class="header__nav-item-link nav-item-link" href="#price"> цены</a>
+            </div>
+            <div class="nav-item"><a class="header__nav-item-link nav-item-link" href="#contacts">
+                контакты</a>
+            </div>
+
+          </nav>
+          <div class="burger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="popup-start animate__animated animate__backInDown">
+      <div class="container">
+        <div class="btn-close"></div>
+        <div class="btn-back animate__animated animate__fadeIn"></div>
+        <div class="popup-start__logo">logo</div>
+        <div class="tab animate__animated animate__fadeIn" id="popup1">
+          <div class="tab-title">
+            Мы накопили креативный,
+            технический и операционный опыт.
+            Чем можем вам помочь?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item" id="tab__sites">Разработка сайтов</div>
+            <div class="tab__buttons-item" id="tab__application">Разработка приложений</div>
+            <div class="tab__buttons-item" id="tab__brand">Брендинг и айдентика</div>
+            <div class="tab__buttons-item" id="tab__design">Дизайн</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup2">
+          <div class="tab-title">
+            Мы поняли: у вас есть проект для нас, но давайте подробнее!
+            Какой тип сайта нужно разработать ..?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Сайт-визитка</div>
+            <div class="tab__buttons-item">Интернет-каталог</div>
+            <div class="tab__buttons-item">Интернет-магазин</div>
+            <div class="tab__buttons-item">Корпоративный сайт</div>
+            <div class="tab__buttons-item">Landing page</div>
+            <div class="tab__buttons-item">Веб-сервис</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup3">
+          <div class="tab-title">
+            Техническое задание проекта:
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Да, у меня есть техническое задание</div>
+            <div class="tab__buttons-item">Нет, у меня нет технического задания</div>
+          </div>
+          <div class="popup-skip">Пропустить</div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup4">
+          <div class="tab-title">
+            Логотип проекта:
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Да, у меня есть логотип/брендбук</div>
+            <div class="tab__buttons-item">Нет, но нужно разработать логотип/брендбук</div>
+            <div class="tab__buttons-item">Нет, использовать шрифтовую надпись</div>
+          </div>
+          <div class="popup-skip">Пропустить</div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup5">
+          <div class="tab-title">
+            Теперь мы знаем почти все.
+            Какой срок выполнения проекта?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">1 мес</div>
+            <div class="tab__buttons-item">2-3 мес</div>
+            <div class="tab__buttons-item">3-6 мес</div>
+            <div class="tab__buttons-item">от 6 мес</div>
+            <div class="tab__buttons-item">нет чёткого срока</div>
+          </div>
+          <div class="popup-skip">Пропустить</div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup6">
+          <div class="tab-title">
+            Супер!
+            Какой диапазон бюджета для данного проекта?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">до $500</div>
+            <div class="tab__buttons-item">$ 500 - $1 000</div>
+            <div class="tab__buttons-item">$1 000 - $3 000</div>
+            <div class="tab__buttons-item">$3 000 - $7 000</div>
+            <div class="tab__buttons-item">$7 000 - $15 000</div>
+          </div>
+          <div class="popup-skip">Пропустить</div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup7">
+          <div class="tab-title">
+            Сделаем что-то вместе!
+            Ждем Ваш проект!
+          </div>
+          <form id="popup-start-form" action="SUBMIT" class="tab-form">
+            <input type="text" class="popup-input" name="name" placeholder="Имя">
+            <input type="email" class="popup-input" name="email" placeholder="Email">
+            <input type="tel" class="popup-input" name="tel" placeholder="Мобильный телефон">
+            <label for="text">Сообщение:</label>
+            <textarea name="message" id="text" cols="30" rows="10" placeholder="Несколько слов о Вашем проекте..."
+              class="text-popup"></textarea>
+            <button class="btn popup-btn">Работать с нами</button>
+          </form>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup8">
+          <div class="tab-title">
+            Мы поняли: у вас есть проект для нас, но давайте подробнее!
+            Приложение нужно для ..?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Повышение имиджа компании и увеличение активных пользователей</div>
+            <div class="tab__buttons-item">Обновление новостей и акционных предложений </div>
+            <div class="tab__buttons-item">Автоматизация бизнес процессов</div>
+            <div class="tab__buttons-item">Увеличеник продаж/обращений </div>
+            <div class="tab__buttons-item">Удобный способ доставки и оплаты товара</div>
+            <div class="tab__buttons-item">Затрудняюсь с ответом</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup9">
+          <div class="tab-title">
+            Приложение нужно для ОС:
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">IOS</div>
+            <div class="tab__buttons-item">Android</div>
+            <div class="tab__buttons-item">IOS + Android</div>
+            <div class="tab__buttons-item">Другое</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup10">
+          <div class="tab-title">
+            Мы поняли: у вас есть проект для нас, но давайте подробнее!
+            Есть ли у вас старая версия логотипа ..?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Да, у меня есть логотип, нужно обновить</div>
+            <div class="tab__buttons-item">Да, у меня есть логотип, нужен полностью новый</div>
+            <div class="tab__buttons-item">Нет, у меня нет логотипа</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup11">
+          <div class="tab-title">
+            Техническое задание проекта:
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Да, у меня есть техническое задание</div>
+            <div class="tab__buttons-item">Нет, у меня нет технического задания</div>
+          </div>
+          <div class="popup-skip">Пропустить</div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup12">
+          <div class="tab-title">
+            Тип логотипа?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Графический</div>
+            <div class="tab__buttons-item">Абстрактный </div>
+            <div class="tab__buttons-item">Словесный </div>
+            <div class="tab__buttons-item">Аббревиатура</div>
+            <div class="tab__buttons-item">Комбинированный</div>
+            <div class="tab__buttons-item">Эмблема</div>
+            <div class="tab__buttons-item">Логотип - талисман</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup13">
+          <div class="tab-title">
+            Нужна айдентика?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Да, нужна айдентика</div>
+            <div class="tab__buttons-item">Нет, нужен только логотип</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup14">
+          <div class="tab-title">
+            Мы поняли: у вас есть проект для нас, но давайте подробнее!
+            Дизайн нужно разработать для ..?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Сайт</div>
+            <div class="tab__buttons-item">Рекламные материалы</div>
+            <div class="tab__buttons-item">Презентация </div>
+            <div class="tab__buttons-item">Другое</div>
+          </div>
+        </div>
+        <div class="tab animate__animated animate__fadeIn" id="popup15">
+          <div class="tab-title">
+            Дизайн какого типа сайта нужно разработать ..?
+          </div>
+          <div class="tab__buttons">
+            <div class="tab__buttons-item">Сайт-визитка</div>
+            <div class="tab__buttons-item">Интернет-каталог</div>
+            <div class="tab__buttons-item">Интернет-магазин</div>
+            <div class="tab__buttons-item">Корпоративный сайт
+            </div>
+            <div class="tab__buttons-item">Landing page
+            </div>
+            <div class="tab__buttons-item">Веб-сервис
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main__inner">
+        <div class="main__block">
+          <div class="main__headline headline">
+            Дальше больше, скроль
+          </div>
+          <div class="main__title">
+            Веб разработка UI/UX Дизайн Брендинг
+          </div>
+          <div class="main__subtitle">
+            Создаем крафтовые сайты, которые помогают<br />
+            раскрыть потенциал бизнеса
+          </div>
+          <a class="main-btn btn" href="#">
+            Старт проекта
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="connection" id="price">
+    <div class="container">
+      <div class="connection__inner">
+        <div class="headline connection__headline">СДЕЛАЕМ ЧТО-ТО ВМЕСТЕ</div>
+        <div class="connection-block">
+          <div class="connection__bonuses">
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+            <div class="connection__bonuses-item">Бонус</div>
+          </div>
+          <div class="connection__phone">
+            <a href="tel:(044) 525-25-47" class="connection__phone-link">(044) 525-25-47</a>
+            СВЯЖИТЕСЬ С НАМИ СЕЙЧАС
+          </div>
+          <form class="connection__form">
+            <input class="input-form" type="text" placeholder="Имя">
+            <input class="input-form" type="text" placeholder="Мобильный номер">
+            <input class="input-form" type="text" placeholder="Email">
+            <button type="submit" class="form-btn btn">ПОЛУЧИТЬ СКИДКУ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="development" id="development">
+    <div class="container">
+      <div class="baner">
+        <div class="headline baner__headline">
+          что мы делаем?
+        </div>
+        <div class="baner__title">
+          Веб <span>разработка.</span>
+        </div>
+        <div class="baner__desc">
+          Крафтовые, быстрые и <br /> функциональные веб-сайты любой сложности !
+          Мы поможем реализовать вашу идею и воплотить ее в современный веб-продукт.
+        </div>
+      </div>
+      <div class="development__products">
+        <div class="development__products-item">
+          <img class="development__products-item-img" src="./img/иконки/сайт-визитка.png" alt="">
+          <div class="development__products-item-title">
+            САЙТ-ВИЗИТКА
+          </div>
+          <div class="development__products-item-desc hide visit-content">
+            — это Ваша визитная карточка в
+            Интернете, главной целью которой
+            является краткая передача
+            информации о компании или персоне.
+            <br /><br /><br />
+            <br /><br /><br />
+            Сайт-визитка — это простой способ взаимодействия с клиентом. Как правило, подобные ресурсы состоят из 1-3
+            страниц. Например, Главная страница (фото-слайдер или видео блок, с тематическим контентом о Вашей
+            деятельности). Далее может располагаться краткая информация о компании или персоне. Последняя страница —
+            контактная информация, карта проезда и форма обратной связи.
+          </div>
+          <a class="development__products-item-link visit" href="#projects">
+            подробнее<br />
+            ↓
+          </a>
+        </div>
+        <div class="development__products-item">
+          <img class="development__products-item-img" src="./img/иконки/интерне-каталог.png" alt="">
+          <div class="development__products-item-title">
+            ИНТЕРНЕТ-КАТАЛОГ
+          </div>
+          <div class="development__products-item-desc hide catalog-site-content">
+            — это электронная витрина Ваших
+            товаров или предоставляемых услуг. Данный тип сайта предназначен для эффектной демонстрации контента
+            на Вашем ресурсе.
+            <br /><br /><br />
+            <br /><br />
+            Интернет-каталог (веб-каталог) помогает быстро и удобно разместить информацию о своем продукте или услуге.
+            Структура сайта построена таким образом, чтобы с минимальным количеством переходов потенциальный клиент
+            просмотрел Ваш каталог и сделал «полезное» действие, а именно — оформил заявку или позвонил. Индивидуальная
+            структура и дизайн сайта-каталога поможет качественно продемонстрировать товар или услугу и продать её.
+          </div>
+          <a class="development__products-item-link catalog-site" href="#projects">
+            подробнее<br />
+            ↓
+          </a>
+        </div>
+        <div class="development__products-item">
+          <img class="development__products-item-img" src="./img/иконки/интерне-магазин.png" alt="">
+          <div class="development__products-item-title">
+            ИНТЕРНЕТ-МАГАЗИН
+          </div>
+          <div class="development__products-item-desc hide shop-site-content">
+            — автоматизированный веб-ресурс, который предназначен для продажи товара онлайн. Вам не нужно
+            открывать дополнительные точки продаж по всему городу или стране. Достаточно иметь качественный,
+            функциональный и грамотно
+            построенный интернет-магазин.
+            <br /><br />
+            Современный интернет-магазин способствует сокращению ненужных расходов на персонал, логистику, аренду
+            складских помещений. Подключение дополнительных модулей оплаты и доставки товара способствует быстрой
+            коммуникации с клиентом.
+            <br /><br />
+            Синхронизация с 1С или другими системами учета поможет контролировать товарный запас и продажи, планировать
+            закупки. Синхронизация с CRM-системой автоматизирует Ваши продажи и взаимодействия с клиентом.
+
+          </div>
+          <a class="development__products-item-link shop-site" href="#projects">
+            подробнее<br />
+            ↓
+          </a>
+        </div>
+        <div class="development__products-item">
+          <img class="development__products-item-img" src="./img/иконки/корпоративный сайт.png" alt="">
+          <div class="development__products-item-title">
+            КОРПОРАТИВНЫЙ САЙТ
+          </div>
+          <div class="development__products-item-desc hide corp-site-content">
+            — это представительство Вашей
+            компании на просторах Интернета. Данный тип сайта раскрывает суть деятельности компании, формирует Ваш имидж
+            и бренд.
+            <br /><br /><br />
+            <br /><br />
+            Корпоративный сайт – это не просто источник информации или реклама компании, это ценный управленческий
+            ресурс. Он помогает решать сложный комплекс задач внутри Вашей организации. Корпоративный сайт является не
+            только «лицом» компании, но и надежным помощником в коммуникации с клиентами.
+          </div>
+          <a class="development__products-item-link corp-site" href="#projects">
+            подробнее<br />
+            ↓
+          </a>
+        </div>
+        <div class="development__products-item">
+          <img class="development__products-item-img" src="./img/иконки/лендигнг.png" alt="">
+          <div class="development__products-item-title">
+            LANDING-PAGE
+          </div>
+          <div class="development__products-item-desc hide landing-site-content">
+            — это посадочная страница с призывом к действию, демонстрация товара или услуги. Главной задачей построения
+            сайта является совершение клиентом целевого действия.
+            <br /><br /><br />
+            <br /><br />
+            Landing page может быть как основным, так и дополнительным сайтом. Данный тип сайта оптимально подходит для
+            проведения рекламной кампании по конкретному товару или отдельной услуге. Посадочная страница разработана
+            таким образом, чтобы во время «скролла» сайта потенциальный клиент сначала ознакомился с компанией,
+            преимуществами, самим товаром или услугой, а затем сделал заказ через форму обратной связи или по телефону.
+
+          </div>
+          <a class="development__products-item-link landing-site" href="#projects">
+            подробнее<br />
+            ↓
+          </a>
+        </div>
+        <div class="development__products-item">
+          <img class="development__products-item-img" src="./img/иконки/веб-сервис.png" alt="">
+          <div class="development__products-item-title">
+            ВЕБ-СЕРВИС
+          </div>
+          <div class="development__products-item-desc hide web-site-content">
+            — это масштабный интернет-проект, со сложной структурой и навигацией. Данный вид разработки предназначен для
+            нестандартных задач, большого количества посетителей и популярности пользования.
+            <br /><br /><br /><br />
+            Создание веб-сервиса с индивидуальной структурой и идеей – это достаточно трудоемкая работа. Может содержать
+            как десятки, так и сотни страниц. Тематика проекта может быть как одна, так и несколько одновременно.
+
+          </div>
+          <a class="development__products-item-link web-site" href="#projects">
+            подробнее<br />
+            ↓
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stages" id="stages">
+    <div class="container">
+      <div class="baner">
+        <div class="headline baner__headline">
+          ПРОЦЕСС СОЗДАНИЯ
+        </div>
+        <div class="baner__title stages__title">
+          Наши этапы <span>разработки.</span>
+        </div>
+        <div class="baner__desc">
+          Последовательность создания сайта и четкая проработка этапов - это залог успеха всего проекта.
+        </div>
+      </div>
+      <div class="stages__inner">
+        <div class="stages__steps steps">
+          <div class="steps-block steps-block--active animate__animated">
+            ШАГ 1:<span> СТАРТ ПРОЕКТА, GO!</span>
+            <ul class="steps-block__desc steps-block__desc--active">
+              <li class="steps-block__desc-item">Анализ проекта</li>
+              <li class="steps-block__desc-item">Коммерческое предложение</li>
+              <li class="steps-block__desc-item">Заключение договора</li>
+              <li class="steps-block__desc-item">1-я часть оплаты 30%</li>
+            </ul>
+          </div>
+          <div class="steps-block">ШАГ 2:<span> ПОГНАЛИ, А ЭТО - ПРОТОТИП, ТЗ</span>
+            <ul class="steps-block__desc">
+              <li class="steps-block__desc-item">Создание прототипа сайта</li>
+              <li class="steps-block__desc-item">Корректировка, согласование прототипа</li>
+              <li class="steps-block__desc-item">Написание Технического задания</li>
+              <li class="steps-block__desc-item">Согласование Технического задания</li>
+            </ul>
+          </div>
+          <div class="steps-block">ШАГ 3:<span> А ТЕПЕРЬ ДИЗАЙН, ГРАФИКА И АНИМАЦИЯ</span>
+            <ul class="steps-block__desc">
+              <li class="steps-block__desc-item">2-я часть оплаты 20%</li>
+              <li class="steps-block__desc-item">Разработка дизайна Главной страницы</li>
+              <li class="steps-block__desc-item">Дизайн внутренних страниц</li>
+              <li class="steps-block__desc-item">Уникальные графические элементы</li>
+              <li class="steps-block__desc-item">Анимация блоков</li>
+              <li class="steps-block__desc-item">Разработка адаптивного дизайна</li>
+              <li class="steps-block__desc-item">Согласование финальной версии дизайна</li>
+
+            </ul>
+          </div>
+          <div class="steps-block">ШАГ 4:<span> ФУХ, ДАВАЙ ПОКОДИМ <<\></span>
+            <ul class="steps-block__desc">
+              <li class="steps-block__desc-item">3-я часть оплаты 25%</li>
+              <li class="steps-block__desc-item">Верстка макетов</li>
+              <li class="steps-block__desc-item">Программирование сайта</li>
+              <li class="steps-block__desc-item">Подключение и настройка дополнительных инструментов</li>
+            </ul>
+          </div>
+          <div class="steps-block">ШАГ 5:<span> СДЕЛАЛ! ДАЛЕЕ ТЕСТ!</span>
+            <ul class="steps-block__desc">
+              <li class="steps-block__desc-item">Тестовое наполнение сайта</li>
+              <li class="steps-block__desc-item">Тестирование проекта</li>
+              <li class="steps-block__desc-item">Финальная оплата 25%</li>
+              <li class="steps-block__desc-item">Регистрация домена</li>
+              <li class="steps-block__desc-item">Перенос на хостинг или сервер</li>
+            </ul>
+          </div>
+          <div class="steps-block">ШАГ 6:<span> САЙТ ГОТОВ! ВЫ РАДЫ, МЫ ЗАКРЫЛИ ПРОЕКТ!</span>
+            <ul class="steps-block__desc">
+              <li class="steps-block__desc-item">Запуск и обучение</li>
+              <li class="steps-block__desc-item"> Гарантийный период</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stages__services">
+          <div class="stages__services-title">
+            ДОПОЛНИТЕЛЬНЫЕ <br /> УСЛУГИ
+          </div>
+          <a class="stages__services-item" href="./services.html">UI/UX Дизайн </a>
+          <a class="stages__services-item" href="./services.html">Брендинг и айдентика</a>
+          <a class="stages__services-item" href="./services.html">Разработка приложений</a>
+          <a class="stages__services-item" href="./services.html">Чат-бот</a>
+          <a class="stages__services-item" href="./services.html">Доработка и поддержка сайтов</a>
+          <a class="stages__services-item" href="./services.html">Хостинг</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="baner">
+        <div class="headline baner__headline">
+          НЕКОТОРЫЕ ИЗ НАШИХ ЛУЧШИХ РАБОТ
+        </div>
+        <div class="baner__title">
+          Наши <span>проекты.</span>
+        </div>
+      </div>
+      <div class="projects__inner">
+        <div class="tabs nav">
+          <a class="tabs__item nav-item-link tabs__item--active" ">ИНТЕРНЕТ-МАГАЗИНЫ</a>
+            <a class=" tabs__item nav-item-link" ">ИНТЕРНЕТ-КАТАЛОГИ</a>
+            <a class=" tabs__item nav-item-link" "> КОРПОРАТИВНые сайты</a>
+            <a class=" tabs__item nav-item-link" ">Веб-сервисы</a>
+            <a class=" tabs__item nav-item-link" ">Landing-pages</a>
+            <a class=" tabs__item nav-item-link" ">сайты-визитки</a>
+        </div>
+        <div class=" projects__block projects__block--active" id="shop">
+            <div class="projects__block-item" data-title="Healthy life">
+              <img class="projects__block-item-img" src="./img/Healthy-life.png" alt="">
+            </div>
+            <div class="projects__block-item" data-title="Kupi rakushku">
+              <img class="projects__block-item-img" src="./img/Kupi-rakushku.png" alt="">
+            </div>
+            <div class="projects__block-item" data-title="Ot Valentiny">
+              <img class="projects__block-item-img" src="./img/Ot Valentiny.png" alt="">
+            </div>
+        </div>
+        <div class="projects__block" id="catalog">
+          <div class="projects__block-item" data-title="Monaco">
+            <img class="projects__block-item-img" src="./img/Monaco.png" alt="">
+          </div>
+        </div>
+        <div class="projects__block" id="corporative">
+          <div class="projects__block-item" data-title="Club Maximym">
+            <img class="projects__block-item-img" src="./img/Club Maximym.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Goretskyy & Partners">
+            <img class="projects__block-item-img" src="./img/Goretskyy & Partners.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Jaje">
+            <img class="projects__block-item-img" src="./img/Jaje.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Sls group">
+            <img class="projects__block-item-img" src="./img/Sls-group.png" alt="">
+          </div>
+        </div>
+        <div class="projects__block" id="web">
+          <div class="projects__block-item" data-title="3Myhouse">
+            <img class="projects__block-item-img" src="./img/3Myhouse.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Golden diesel">
+            <img class="projects__block-item-img" src="./img/Golden diesel.png" alt="">
+          </div>
+        </div>
+        <div class="projects__block" id="landing">
+          <div class="projects__block-item" data-title="GS Pro Mats">
+            <img class="projects__block-item-img" src="./img/GS Pro Mats.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Panties box">
+            <img class="projects__block-item-img" src="./img/Panties box.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Personal Space">
+            <img class="projects__block-item-img" src="./img/Personal Space.png" alt="">
+          </div>
+          <div class="projects__block-item" data-title="Woodprocessing">
+            <img class="projects__block-item-img" src="./img/Woodprocessing.png" alt="">
+          </div>
+        </div>
+        <div class="projects__block" id="cutaway">
+          <div class="projects__block-item" data-title="Jambo">
+            <img class="projects__block-item-img" src="./img/Jambo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="about-clients">
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__text">
+            <div class="baner">
+              <div class="headline baner__headline">
+                о нас
+              </div>
+              <div class="baner__title">
+                Преимущества <br /><span>нашего агентства</span>
+              </div>
+            </div>
+            <div class="about__list">
+              <div class="about__list-item">
+                Удобная и понятная CMS — Разные права доступа в панель
+                управления сайта и др.
+              </div>
+              <div class="about__list-item">Размещение сайта на нашем хостинге на 1 год в подарок при заказе пакетов
+                «Бизнес» или «Премиум».</div>
+              <div class="about__list-item">
+                Интеграция и настройка популярных сервисов отслеживания
+                статистики посещений и другие аналитические услуги.
+              </div>
+              <div class="about__list-item">
+                Настройка защищенного протокола https при заказе пакетов «Бизнес» или «Премиум».
+              </div>
+              <div class="about__list-item">
+                Интеграция популярных сервисов социальных сетей при заказе
+                пакетов «Бизнес» или «Премиум».
+              </div>
+              <div class="about__list-item">
+                Работа с контентом – мы наполним Ваш сайт контентом.
+              </div>
+            </div>
+          </div>
+          <div class="about__img">
+            <img src="./img/women-about.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <div class="baner">
+          <div class="headline baner__headline">
+            СТРОИМ ДОЛГОСРОЧНЫЕ ОТНОШЕНИЯ
+          </div>
+          <div class="baner__title">
+            Наши <span>клиенты.</span>
+          </div>
+        </div>
+        <div class="clients__inner">
+          <div class="clients-block">
+            <img src="./img/client1.png" alt="">
+          </div>
+          <div class="clients-block">
+            <img src="./img/client2.png" alt="">
+          </div>
+          <div class="clients-block">
+            <img src="./img/client3.png" alt="">
+          </div>
+          <div class="clients-block">
+            <img src="./img/client4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <div class="baner">
+        <div class="headline baner__headline">
+          ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+        </div>
+        <div class="baner__title">
+          Отзывы<span>.</span>
+        </div>
+      </div>
+      <div class="feedback__slider">
+        <div class="feedback__slider-item ">
+          <div class="slider-item">
+            <div class="slider-item-img"></div>
+            <div class="slider-item-title">
+              Business man
+            </div>
+            <div class="slider-item-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus
+              vel facilisis.
+            </div>
+            <div class="slider-item-authorName">Ronny Abel</div>
+            <div class="slider-item-authorPost">Business man</div>
+          </div>
+        </div>
+
+        <div class="feedback__slider-item ">
+          <div class="slider-item">
+            <div class="slider-item-img"></div>
+            <div class="slider-item-title">
+              Business man
+            </div>
+            <div class="slider-item-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus
+              vel facilisis.
+            </div>
+            <div class="slider-item-authorName">Ronny Abel</div>
+            <div class="slider-item-authorPost">Business man</div>
+          </div>
+        </div>
+        <div class="feedback__slider-item ">
+          <div class="slider-item">
+            <div class="slider-item-img"></div>
+            <div class="slider-item-title">
+              Business man
+            </div>
+            <div class="slider-item-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus
+              vel facilisis.
+            </div>
+            <div class="slider-item-authorName">Ronny Abel</div>
+            <div class="slider-item-authorPost">Business man</div>
+          </div>
+        </div>
+        <div class="feedback__slider-item ">
+          <div class="slider-item">
+            <div class="slider-item-img"></div>
+            <div class="slider-item-title">
+              Business man
+            </div>
+            <div class="slider-item-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus
+              vel facilisis.
+            </div>
+            <div class="slider-item-authorName">Ronny Abel</div>
+            <div class="slider-item-authorPost">Business man</div>
+          </div>
+        </div>
+        <div class="feedback__slider-item">
+          <div class="slider-item">
+            <div class="slider-item-img"></div>
+            <div class="slider-item-title">
+              Business man
+            </div>
+            <div class="slider-item-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus
+              vel facilisis.
+            </div>
+            <div class="slider-item-authorName">Ronny Abel</div>
+            <div class="slider-item-authorPost">Business man</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="callback">
+    <div class="container">
+      <div class="baner">
+        <div class="headline baner__headline">
+          Сделаем что-то вместе
+        </div>
+        <div class="baner__title">
+          Нужен успешный проект?
+        </div>
+      </div>
+      <div class="callback__inner">
+        <div class="callback-btn btn">
+          Работать с нами
+        </div>
+        <div class="connection__phone">
+          <a href="tel:(044) 525-25-47" class="connection__phone-link">(044) 525-25-47</a>
+          СВЯЖИТЕСЬ С НАМИ СЕЙЧАС
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="popup">
+    <div class="popup__inner">
+      <div class="popup-title">
+        Форма связи
+      </div>
+      <form action="SUBMIT">
+        <input type="text" class="popup-input" placeholder="Имя">
+        <input type="text" class="popup-input" placeholder="Email">
+        <input type="text" class="popup-input" placeholder="Мобильный телефон">
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение" class="text-popup"></textarea>
+        <button class="btn popup-btn">Работать с нами</button>
+      </form>
+    </div>
+  </div>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__adds">
+          <div class="contacts__adds-headline">
+            контакты
+          </div>
+          <div class="contacts__adds-text">
+            04070, г. Киев<br />
+            ул. Ломоносова, 73-з<br />
+            BeeWorking
+            <br /><br />
+            +380 (68) 506-28-50 +380 (44) 227-27-91<br />
+            info@in-create.com
+          </div>
+        </div>
+        <div class="contacts__nav">
+          <div class="contacts__nav-block">
+            <a href="#header" class="contacts__nav-block-item">Главная</a>
+            <a href="#development" class="contacts__nav-block-item">Веб-разработка
+              <a href="#development" class="contacts__nav-block-subtext">Интернет магазин</a>
+              <a href="#development" class="contacts__nav-block-subtext">Интернет-каталог</a>
+              <a href="#development" class="contacts__nav-block-subtext">Корпоративный сайт</a>
+              <a href="#development" class="contacts__nav-block-subtext">Landing page</a>
+              <a href="#development" class="contacts__nav-block-subtext">Сайт-визитка</a>
+              <a href="#development" class="contacts__nav-block-subtext">Веб-сервис</a>
+            </a>
+            <a href="#projects" class="contacts__nav-block-item">наши проекты</a>
+            <a href="#about" class="contacts__nav-block-item">преимущества</a>
+          </div>
+          <div class="contacts__nav-block">
+            <a href="#feedback" class="contacts__nav-block-item">отзывы</a>
+            <a href="#stages" class="contacts__nav-block-item">услуги
+              <a href="#stages" class="contacts__nav-block-subtext">UI/UX Дизайн</a>
+              <a href="#stages" class="contacts__nav-block-subtext">Брендинг и айдентика</a>
+              <a href="#stages" class="contacts__nav-block-subtext">Разработка приложений</a>
+              <a href="#stages" class="contacts__nav-block-subtext">Чат-боты</a>
+              <a href="#stages" class="contacts__nav-block-subtext">Доработка и поддержка сайтов</a>
+              <a href="#stages" class="contacts__nav-block-subtext">Хостинг</a>
+            </a>
+            <a href="#price" class="contacts__nav-block-item">цены</a>
+            <a href="#contacts" class="contacts__nav-block-item">контакты</a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__rigths">@2021 All Right Reserved. <span>Power Media</span></div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+<script>
+  $('.feedback__slider').slick({
+    dots: true,
+    infinite: false,
+    arrows: false,
+    vertical: true,
+  });
+  $(document).ready(function () {
+    $('.visit').click(function () {
+      $('.visit-content').toggleClass('hide');
+      if ($('.visit-content').hasClass('hide')) {
+        $('.visit').html('подробнее<br />↓');
+      } else {
+        $('.visit').html('скрыть<br />↑');
+      }
+      return false;
+    });
+    $('.catalog-site').click(function () {
+      $('.catalog-site-content').toggleClass('hide');
+      if ($('.catalog-site-content').hasClass('hide')) {
+        $('.catalog-site').html('подробнее<br />↓');
+      } else {
+        $('.catalog-site').html('скрыть<br />↑');
+      }
+      return false;
+    });
+    $('.shop-site').click(function () {
+      $('.shop-site-content').toggleClass('hide');
+      if ($('.shop-site-content').hasClass('hide')) {
+        $('.shop-site').html('подробнее<br />↓');
+      } else {
+        $('.shop-site').html('скрыть<br />↑');
+      }
+      return false;
+    });
+    $('.corp-site').click(function () {
+      $('.corp-site-content').toggleClass('hide');
+      if ($('.corp-site-content').hasClass('hide')) {
+        $('.corp-site').html('подробнее<br />↓');
+      } else {
+        $('.corp-site').html('скрыть<br />↑');
+      }
+      return false;
+    });
+    $('.landing-site').click(function () {
+      $('.landing-site-content').toggleClass('hide');
+      if ($('.landing-site-content').hasClass('hide')) {
+        $('.landing-site').html('подробнее<br />↓');
+      } else {
+        $('.landing-site').html('скрыть<br />↑');
+      }
+      return false;
+    });
+    $('.web-site').click(function () {
+      $('.web-site-content').toggleClass('hide');
+      if ($('.web-site-content').hasClass('hide')) {
+        $('.web-site').html('подробнее<br />↓');
+      } else {
+        $('.web-site').html('скрыть<br />↑');
+      }
+      return false;
+    });
+
+  });
+</script>
+
+</html>
